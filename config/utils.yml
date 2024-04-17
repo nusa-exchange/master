@@ -1,0 +1,4 @@
+images:
+  quantex: nusatech/quantex:latest
+  applogic: applogic:0.0.1
+  finex: finex:0.0.1

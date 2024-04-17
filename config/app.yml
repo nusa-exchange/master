@@ -1,0 +1,62 @@
+---
+app:
+  name: Nusa
+  domain: nusa.live
+  subdomain: www
+render_protect: false
+ssl:
+  enabled: true
+images:
+  barong: barong:0.0.1
+  peatio: peatio:0.0.1
+  rango: rango:0.0.1
+  frontend: frontend:0.0.1
+  admin: admin:0.0.1
+storage:
+  provider: AWS
+  bucketName: nusa
+  accessKey: changemePlease
+  secretKey: changemePlease
+twilio:
+  phone_number: "+14159153078"
+  account_sid: changemePlease
+  auth_token: changemePlease
+  service_id: MG093ddefd24da33eb3f93ba1834981a61
+vault:
+  root_token: s.yUjD7teE9xaUHty2IR8OGX7u
+  peatio_rails_token: s.f6qGfmXjwvSNi5dR49sF9KYV
+  peatio_crypto_token: s.PW4b8l60bD3DJFWMcbCJwYFf
+  peatio_upstream_token: s.QABqySqMEUGc7QfxMsl71CMx
+  peatio_matching_token: s.1gKn89hCNKkzzsQU56hZDj3a
+  barong_token: s.l8nI4mWi50iIN0bXHyuT79MM
+  finex_engine_token: s.MzQ9noXNBI1x3vzTRyCUTmcP
+database:
+  host: db
+  port: 5432
+  user: root
+  password: changemePlease
+recaptcha:
+  siteKey: changemePlease
+  secretKey: changemePlease
+smtp:
+  host: smtp.zoho.com
+  port: 587
+  user: business@nusatech.id
+  password: zEH1WA4gZf9Y
+  sender_email: business@nusatech.id
+  sender_name: Nusa
+  sender_logo: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-635zLHqUQiSADZQLqn_Is4lshe_17MWpCUZRvaj6tw&s
+daemons:
+  blockchain: true
+  deposit: true
+  deposit_coin_address: true
+  withdraw_coin: true
+  upstream: false
+  peatio_cron_job: true
+  finex_cron_job: true
+  matching: true
+  order_processor: true
+  trade_executor: true
+  mailer: true
+  ieo_order_processor: true
+  ieo_order_executor: true
